@@ -10,10 +10,13 @@ class CarTest {
 
     @Test
     fun `can honk`(){
+        // arrange
         val car = Car()
 
+        // act
         val actual = car.honk()
 
+        // assert
         assertThat(actual, equalTo("honk"))
     }
 }
